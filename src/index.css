@@ -1,0 +1,294 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* 
+  NDAANAAN DAY - Islamic Educational Event Design System
+  A dignified, trustworthy, and elegant design language
+*/
+
+@layer base {
+  :root {
+    /* Core Colors - Warm, Trustworthy Islamic Palette */
+    --background: 45 30% 98%;
+    --foreground: 150 25% 15%;
+
+    --card: 45 25% 99%;
+    --card-foreground: 150 25% 15%;
+
+    --popover: 45 25% 99%;
+    --popover-foreground: 150 25% 15%;
+
+    /* Primary - Deep Emerald Green (Islamic Green) */
+    --primary: 158 45% 25%;
+    --primary-foreground: 45 30% 98%;
+
+    /* Secondary - Warm Cream */
+    --secondary: 42 35% 94%;
+    --secondary-foreground: 150 25% 20%;
+
+    /* Muted - Soft Sage */
+    --muted: 150 15% 92%;
+    --muted-foreground: 150 15% 40%;
+
+    /* Accent - Antique Gold (subtle, prestigious) */
+    --accent: 38 55% 55%;
+    --accent-foreground: 45 30% 98%;
+
+    /* Gold variations for special elements */
+    --gold: 38 55% 55%;
+    --gold-light: 40 45% 75%;
+    --gold-dark: 36 60% 40%;
+
+    /* Deep Green variations */
+    --emerald: 158 45% 25%;
+    --emerald-light: 155 35% 45%;
+    --emerald-dark: 160 50% 18%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 45 30% 98%;
+
+    --border: 150 15% 88%;
+    --input: 150 15% 88%;
+    --ring: 158 45% 25%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar - maintaining original structure */
+    --sidebar-background: 45 25% 97%;
+    --sidebar-foreground: 150 25% 20%;
+    --sidebar-primary: 158 45% 25%;
+    --sidebar-primary-foreground: 45 30% 98%;
+    --sidebar-accent: 42 35% 94%;
+    --sidebar-accent-foreground: 150 25% 20%;
+    --sidebar-border: 150 15% 88%;
+    --sidebar-ring: 158 45% 25%;
+
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(158 45% 25%) 0%, hsl(160 50% 18%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(40 45% 75%) 0%, hsl(38 55% 55%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(45 30% 98%) 0%, hsl(42 35% 94%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(150 25% 15% / 0.08);
+    --shadow-card: 0 8px 30px -4px hsl(150 25% 15% / 0.1);
+    --shadow-elevated: 0 20px 50px -10px hsl(150 25% 15% / 0.15);
+
+    /* Typography */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+  }
+
+  .dark {
+    --background: 160 30% 8%;
+    --foreground: 45 25% 95%;
+
+    --card: 158 25% 12%;
+    --card-foreground: 45 25% 95%;
+
+    --popover: 158 25% 12%;
+    --popover-foreground: 45 25% 95%;
+
+    --primary: 155 40% 50%;
+    --primary-foreground: 160 30% 8%;
+
+    --secondary: 155 20% 18%;
+    --secondary-foreground: 45 25% 95%;
+
+    --muted: 155 20% 18%;
+    --muted-foreground: 150 15% 65%;
+
+    --accent: 40 50% 50%;
+    --accent-foreground: 160 30% 8%;
+
+    --gold: 40 50% 50%;
+    --gold-light: 42 45% 65%;
+    --gold-dark: 38 55% 35%;
+
+    --emerald: 155 40% 50%;
+    --emerald-light: 152 35% 60%;
+    --emerald-dark: 158 45% 35%;
+
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 45 25% 95%;
+
+    --border: 155 20% 22%;
+    --input: 155 20% 22%;
+    --ring: 155 40% 50%;
+
+    --sidebar-background: 158 25% 10%;
+    --sidebar-foreground: 45 25% 92%;
+    --sidebar-primary: 155 40% 50%;
+    --sidebar-primary-foreground: 160 30% 8%;
+    --sidebar-accent: 155 20% 16%;
+    --sidebar-accent-foreground: 45 25% 92%;
+    --sidebar-border: 155 20% 22%;
+    --sidebar-ring: 155 40% 50%;
+  }
+
+  /* RTL Support for Arabic */
+  [dir="rtl"] {
+    font-family: var(--font-arabic), var(--font-body);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    @apply font-semibold tracking-tight;
+  }
+
+  /* Arabic text styling */
+  .arabic-text {
+    font-family: var(--font-arabic);
+    direction: rtl;
+    line-height: 1.8;
+  }
+
+  /* Islamic geometric pattern overlay */
+  .islamic-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23285a47' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  /* Hero section styling */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  /* Gold accent elements */
+  .gold-accent {
+    color: hsl(var(--gold));
+  }
+
+  .gold-gradient {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Elegant card styling */
+  .card-elevated {
+    box-shadow: var(--shadow-card);
+    @apply bg-card rounded-lg border border-border/50;
+  }
+
+  /* Section dividers with Islamic motif */
+  .section-divider {
+    @apply relative py-8;
+  }
+
+  .section-divider::before {
+    content: '✧';
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+    color: hsl(var(--gold));
+    font-size: 1.5rem;
+  }
+
+  /* Countdown timer styling */
+  .countdown-box {
+    @apply bg-card/80 backdrop-blur-sm rounded-lg p-4 text-center border border-border/30;
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* WhatsApp floating button */
+  .whatsapp-float {
+    @apply fixed bottom-6 right-6 z-50 rounded-full p-4 shadow-lg transition-transform hover:scale-110;
+    background-color: #25D366;
+    color: white;
+  }
+
+  /* Elegant button variants */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-emerald-light transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-muted transition-colors;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors;
+  }
+
+  .btn-gold {
+    background: var(--gradient-gold);
+    @apply text-foreground font-medium transition-opacity hover:opacity-90;
+  }
+}
+
+@layer utilities {
+  /* Subtle animations */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 3s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseSoft {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.85;
+    }
+  }
+
+  /* Text utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Shadow utilities */
+  .shadow-elegant {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}
