@@ -91,9 +91,27 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-4">
-          <p className="text-center text-sm text-primary-foreground/60">
-            © 2026 NDAANAAN DAY. {t('footer.rights')}.
-          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-primary-foreground/60">
+              © 2026 NDAANAAN DAY. {t('footer.rights')}.
+            </p>
+            <div className="text-sm text-primary-foreground/60">
+              <span>Développé par </span>
+              <a
+                href="mailto:guissedev@gmail.com"
+                className="hover:text-primary-foreground transition-colors underline"
+              >
+                Kalidou GUISSE (guissedev@gmail.com)
+              </a>
+              <span> | </span>
+              <a
+                href="tel:+221711241873"
+                className="hover:text-primary-foreground transition-colors underline"
+              >
+                +221 71 124 1873
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
