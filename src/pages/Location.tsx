@@ -6,9 +6,11 @@ import { Button } from '@/components/ui/button';
 const Location = () => {
   const { t, language } = useLanguage();
 
+  const latitude = 14.76980;
+  const longitude = -16.94252;
   const address = "Thiès – Quartier Mbour 2, Route du CEM, Senegal";
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-  const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30942.089461168367!2d-16.935!3d14.790!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe1f5f5f5f5f5f5f%3A0x0!2sThi%C3%A8s%2C%20Senegal!5e0!3m2!1sfr!2sfr!4v1600000000000!5m2!1sfr!2sfr";
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+  const embedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30942.089461168367!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe1f5f5f5f5f5f5f%3A0x0!2sThi%C3%A8s%2C%20Senegal!5e0!3m2!1sfr!2sfr!4v1600000000000!5m2!1sfr!2sfr`;
 
   return (
     <Layout>
@@ -33,6 +35,9 @@ const Location = () => {
                 <p className={`text-lg font-medium ${language === 'ar' ? 'font-arabic' : ''}`}>
                   {t('location.address')}
                 </p>
+              </div>
+              <div className="text-sm text-muted-foreground mb-4">
+                <p>Latitude: {latitude} | Longitude: {longitude}</p>
               </div>
               <Button
                 asChild
