@@ -5,7 +5,7 @@ const KeyNumbersSection = () => {
 
   const stats = [
     { value: '10', label: t('numbers.edition'), suffix: '' },
-    { value: '20', label: t('numbers.daaras'), suffix: '' },
+    { value: '25', label: t('numbers.daaras'), suffix: '' },
     { value: '4', label: t('numbers.finalists'), suffix: '' },
     { value: '2M', label: t('numbers.prize'), suffix: '' },
   ];
