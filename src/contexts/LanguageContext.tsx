@@ -23,7 +23,7 @@ const translations = {
     'hero.edition': '10ème Édition',
     'hero.title': 'NDAANAAN DAY',
     'hero.subtitle': 'MOKKAL AL QUR\'ANE',
-    'hero.description': 'Compétition coranique annuelle organisée durant le mois sacré de Ramadan, réunissant 20 daaras pour promouvoir l\'amour du Saint Coran.',
+    'hero.description': 'Compétition coranique annuelle organisée durant le mois sacré de Ramadan, réunissant 25 daaras pour promouvoir l\'amour du Saint Coran.',
     'hero.date': 'Samedi 7 Mars 2026 • 11h00',
     'hero.location': 'Thiès – Quartier Mbour 2',
     'hero.support': 'Soutenir l\'événement',
@@ -44,15 +44,17 @@ const translations = {
     'numbers.prize': 'FCFA de prix',
     
     // Introduction
-    'intro.title': 'Qu\'est-ce que NDAANAAN DAY ?',
-    'intro.description': 'NDAANAAN DAY – MOKKAL AL QUR\'ANE est une compétition coranique annuelle organisée durant le mois sacré de Ramadan. Elle rassemble 20 daaras pour promouvoir l\'amour du Saint Coran, l\'excellence dans son apprentissage et la fraternité entre écoles coraniques.',
+    'intro.q': 'Qu\'est-ce que',
+    'intro.title': 'NDAANAAN DAY MOKKAL AL QUR\'ANE ?',
+    'intro.description': 'NDAANAAN DAY – MOKKAL AL QUR\'ANE est une compétition coranique annuelle organisée durant le mois sacré de Ramadan. Elle rassemble 25 daaras pour promouvoir l\'amour du Saint Coran, l\'excellence dans son apprentissage et la fraternité entre écoles coraniques.',
     
     // Guests
     'guests.title': 'Organisation & Invités d\'honneur',
     'guests.organizer': 'Organisateur',
     'guests.patron': 'Parrain',
     'guests.honor': 'Invité d\'honneur',
-    'guests.supervision': 'Supervision religieuse',
+    // 'guests.supervision': 'Supervision religieuse',
+    'guests.supervision': 'Invité d\'honneur',
     
     // Sponsors
     'sponsors.title': 'Nos partenaires',
@@ -115,9 +117,11 @@ const translations = {
     
     // Hero
     'hero.edition': 'الطبعة العاشرة',
-    'hero.title': 'يوم ندعانان',
-    'hero.subtitle': 'موكال القرآن',
-    'hero.description': 'مسابقة قرآنية سنوية تُنظَّم خلال شهر رمضان المبارك، تجمع 20 دارة لتعزيز حب القرآن الكريم.',
+    // 'hero.title': 'يوم ندعانان',
+    // 'hero.subtitle': 'موكال القرآن',
+    'hero.title': 'مسابقة النجم',
+    'hero.subtitle': 'يحفظ القرآن',
+    'hero.description': 'مسابقة قرآنية سنوية تُنظَّم خلال شهر رمضان المبارك، تجمع 25 دارة لتعزيز حب القرآن الكريم.',
     'hero.date': 'السبت 7 مارس 2026 • الساعة 11:00',
     'hero.location': 'تياس – حي مبور 2',
     'hero.support': 'دعم الحدث',
@@ -138,8 +142,9 @@ const translations = {
     'numbers.prize': 'فرنك جائزة',
     
     // Introduction
-    'intro.title': 'ما هو يوم ندعانان؟',
-    'intro.description': 'يوم ندعانان – موكال القرآن هو مسابقة قرآنية سنوية تُنظَّم خلال شهر رمضان المبارك. تجمع 20 دارة لتعزيز حب القرآن الكريم والتميز في تعلمه والأخوة بين المدارس القرآنية.',
+    'intro.q': 'ما هو ',
+    'intro.title': 'مسابقة النجم يحفظ القرآن؟',
+    'intro.description': 'يوم ندعانان – موكال القرآن هو مسابقة قرآنية سنوية تُنظَّم خلال شهر رمضان المبارك. تجمع 25 دارة لتعزيز حب القرآن الكريم والتميز في تعلمه والأخوة بين المدارس القرآنية.',
     
     // Guests
     'guests.title': 'التنظيم وضيوف الشرف',

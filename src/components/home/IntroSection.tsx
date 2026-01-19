@@ -11,7 +11,9 @@ const IntroSection = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
             <BookOpen className="w-8 h-8 text-primary" />
           </div>
-          
+          <h2 className={`font-heading text-3xl md:text-4xl font-semibold text-foreground ${language === 'ar' ? 'font-arabic' : ''}`}>
+            {t('intro.q')}
+            </h2>
           <h2 className={`font-heading text-3xl md:text-4xl font-semibold text-foreground ${language === 'ar' ? 'font-arabic' : ''}`}>
             {t('intro.title')}
           </h2>

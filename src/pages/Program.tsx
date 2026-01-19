@@ -15,6 +15,8 @@ const Program = () => {
     { time: '16:30', title: 'Interventions religieuses', titleAr: 'المداخلات الدينية' },
     { time: '17:30', title: 'Cérémonie de remise des prix', titleAr: 'حفل توزيع الجوائز' },
     { time: '18:00', title: 'Prières de clôture', titleAr: 'أدعية الختام' },
+    { time: '19:00', title: 'rupture du jeûne', titleAr: 'يفطر'},
+    { time: '20:00', title: 'Dinner', titleAr: 'عشاء'},
   ];
 
   return (
