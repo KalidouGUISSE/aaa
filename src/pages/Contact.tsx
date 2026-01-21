@@ -6,10 +6,10 @@ const Contact = () => {
   const { t, language, isRTL } = useLanguage();
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, url: '#', color: 'hover:bg-[#1877F2]' },
+    { name: 'Facebook', icon: Facebook, url: 'https://www.facebook.com/share/175JA5RUuy', color: 'hover:bg-[#1877F2]' },
     { name: 'WhatsApp', icon: MessageCircle, url: 'https://wa.me/221771724547', color: 'hover:bg-[#25D366]' },
-    { name: 'TikTok', icon: () => <span className="text-lg font-bold">T</span>, url: '#', color: 'hover:bg-black' },
-    { name: 'YouTube', icon: Youtube, url: '#', color: 'hover:bg-[#FF0000]' },
+    { name: 'TikTok', icon: () => <span className="text-lg font-bold">T</span>, url: 'https://www.tiktok.com/@ndaanaan_faydou_sprituel?_r=1&_t=ZS-93FDf9cvPd7', color: 'hover:bg-black' },
+    { name: 'YouTube', icon: Youtube, url: 'https://youtube.com/@ndaanaan-faydou?si=FulNAN55XqcTmCay', color: 'hover:bg-[#FF0000]' },
   ];
 
   return (
